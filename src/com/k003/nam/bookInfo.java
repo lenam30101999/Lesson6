@@ -37,29 +37,6 @@ public class bookInfo {
             //scan.nextLine();
             publisher = scan.nextLine().trim();
 
-            System.out.println("Input your major of falculity: ");
-            System.out.println("1.Information Technology");
-            System.out.println("2.Life and science");
-            System.out.println("3.Literature and Art");
-            System.out.println("Your choice: ");
-            int choice = scan.nextInt();
-            switch (choice){
-                case 1:{
-                    major = "Information technology";
-                    break;
-                }
-
-                case 2:{
-                    major = "Life and Science";
-                    break;
-                }
-
-                case 3:{
-                    major = "Literature and Art";
-                    break;
-                }
-            }
-
             System.out.println("Enter number of book: ");
             number = scan.nextInt();
         }

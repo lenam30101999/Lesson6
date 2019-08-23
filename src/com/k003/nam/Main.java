@@ -11,8 +11,32 @@ public class Main{
         int number = scan.nextInt();
 
         for (int i = 0; i < number; i++){
-            array[i] = new bookInfo();
-            array[i].Input();
+            System.out.println("1.IT");
+            System.out.println("2.LA");
+            System.out.println("3.LS");
+
+            System.out.println("Choose: ");
+            int choice = scan.nextInt();
+
+            switch (choice){
+                case 1:{
+                    array[i] = new IT();
+                    array[i].Input();
+                    break;
+                }
+
+                case 2:{
+                    array[i] = new LA();
+                    array[i].Input();
+                    break;
+                }
+
+                case 3:{
+                    array[i] = new LS();
+                    array[i].Input();
+                    break;
+                }
+            }
         }
 
         System.out.println("Code\t\tName\t\tAuthor\t\tPublisher\t\tMajor\t\tNumber");
